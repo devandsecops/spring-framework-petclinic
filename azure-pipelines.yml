@@ -37,7 +37,7 @@ steps:
   inputs:
     PathtoPublish: $(build.artifactstagingdirectory)
 
-- task: AzureWebApp@3
+- task: AzureWebApp@1
   displayName: Azure Web App Deploy
   inputs:
     azureSubscription: $(serviceConnectionToAzure)
