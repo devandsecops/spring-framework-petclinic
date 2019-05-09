@@ -43,4 +43,4 @@ steps:
     azureSubscription: $(serviceConnectionToAzure)
     appType: webAppLinux
     appName: $(appName)
-    package: drop/target/petclinic.war
+    package: $(build.artifactstagingdirectory)/*.war
